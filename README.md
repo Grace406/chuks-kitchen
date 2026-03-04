@@ -19,13 +19,13 @@ No frameworks or JavaScript libraries were used. The decision to use vanilla HTM
 chuks-kitchen/
 ├── Onboarding_design/
 │   ├── assets/          # Images and icons for onboarding page
-│   ├── onboarding.html  # Welcome/onboarding page
-│   └── onboarding.css   # Styles for onboarding page
+│   ├── index.html  # Welcome/onboarding page
+│   └── styles.css   # Styles for onboarding page
 │
 ├── Sign-in_design/
 │   ├── assets/          # Images and icons for sign in page
-│   ├── sign-in.html     # Sign in page
-│   └── sign-in.css      # Styles for sign in page
+│   ├── index.html     # Sign in page
+│   └── styles.css      # Styles for sign in page
 │
 └── Home_design/
     ├── assets/          # Images and icons for home page
@@ -48,16 +48,16 @@ The Figma designs were translated into code using the following approach:
 ## How to Run
 1. Clone or download the repository at https://github.com/Grace406/chuks-kitchen
 2. Open any of the following files in your browser:
-   - `Onboarding_design/onboarding.html`
-   - `Sign-in_design/sign-in.html`
+   - `Onboarding_design/index.html`
+   - `Sign-in_design/index.html`
    - `Home_design/home.html`
 
 No installations or dependencies required. All pages work directly in any modern browser.
 
 ## Live Preview
-- 👋 Onboarding Page: https://marvelous-alfajores-4d6ab9.netlify.app/onboarding.html
-- 🔐 Sign In Page: [add link here]
-- 🏠 Home Page: https://inquisitive-biscuit-af97db.netlify.app
+- 👋 Onboarding Page: https://onboarding-chuks-kitchen.netlify.app
+- 🔐 Sign In Page: https://sign-in-chuks-kitchen.netlify.app
+- 🏠 Home Page: https://home-chuks-kitchen.netlify.app
 
 ## Limitations & Improvements
 Given more time, the following improvements would be made:
