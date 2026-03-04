@@ -38,8 +38,8 @@ The Figma designs were translated into code using the following approach:
 
 - **Mobile-first** — all base styles were written for mobile screens first, then desktop styles were added using `@media (min-width: 1024px)`
 - **Onboarding Page** — the design shows a two-column layout on desktop with the hero image on the left and content on the right. On mobile it stacks vertically with a full-width hero image and scrollable content below
-- **Sign In Page** — on desktop the page shows a two-column card with a hero image and orange overlay on the left and the login form on the right. On mobile only the form is shown, the hero image is hidden
-- **Home Page** — the desktop layout features a full-width hero, a 3x2 grid for both Popular Categories and Chef's Specials sections. On mobile these display as single-column stacked cards. Three extra cards in each section are hidden on mobile and revealed on desktop using a `desktop-only` CSS class
+- **Sign In Page** — on desktop the page shows a two-column card with a hero image and orange overlay on the left and the login form on the right, accompanied by a footer below the card. On mobile only the form is shown, the hero image and footer are hidden
+- **Home Page** — the desktop layout features a full-width hero, a 3x2 grid for both Popular Categories and Chef's Specials sections, and a footer at the bottom. On mobile these display as single-column stacked cards with the footer hidden. Three extra cards in each section are hidden on mobile and revealed on desktop using a `desktop-only` CSS class
 
 **Assumptions made due to missing design details:**
 - Footer was hidden on mobile and only shown on desktop as the Figma mobile designs did not include it
