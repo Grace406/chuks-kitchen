@@ -1,0 +1,438 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F0F0F0;
+}
+
+main.wrapper{
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    margin: 0 auto;
+    max-width: 400px;
+    min-height: unset;
+    padding: 32px 16px ;
+    
+}
+
+section.hero{
+    display: flex;
+    flex-direction: column;
+
+}
+
+section.hero img{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+div.sign-in-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sign-in-wrapper .sign-in-btn{
+    color: #1E88E5;
+    background-color: #FFFFFF;
+    align-self: flex-end;
+    padding: 12px 24px;
+    border-radius: 12px;
+    border: 2px solid  #1E88E5;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+section.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    
+}
+
+.content-wrapper .content h1{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: hsl(215, 28%, 17%);
+    padding: 16px 0;
+    line-height: 40px;
+    
+}
+
+.content-wrapper .content p{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    padding-bottom: 10px ;
+}
+
+.status-container{
+    width: 100%;
+}
+
+.status-container .mobile-status{
+    display: flex;
+    align-items: center;
+    background-color: #F3F4F6;
+    margin: 10px 0px;
+    padding: 6px 10px;
+    border-radius: 8px;
+}
+
+.status-container .mobile-status .cutlery-icon{
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+    border-radius: 13px;
+}
+
+.status-container .mobile-status .food-status{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+
+}
+
+.cta-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.order-button,
+.about-us{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    width: 100%;
+    padding: 18px 0;
+}
+
+.order-button{
+    color: #FFFFFF;
+    background-color: #FF7A18;
+    border: none;
+}
+
+.about-us{
+    color: #1E88E5;
+    background-color: #FFFFFF;
+    border: 2px solid  #1E88E5;
+}
+
+.site-footer{
+    display: none;
+}
+
+.desktop-copyright{
+    display: none;
+}
+
+.sign-in-wrapper h3 {
+    display: none;
+}
+
+.sign-in-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.desktop-copyright {
+    display: none;
+}
+
+.sign-in-wrapper h3.brand {
+    display: none;
+}
+
+.content .brand-mobile {
+    display: block;
+    font-family: "Island Moments", cursive;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+    color: #FF7A18;
+    text-transform: capitalize;
+    margin-top: 50px;
+}
+
+.status-container .desktop-status{
+    display: none;
+}
+
+
+
+
+/******* CSS MEDIA QUERIES *******/
+
+/* DESKTOP */
+
+@media (min-width: 1024px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        width: 100%;
+    }
+
+    main.wrapper {
+        max-width: 100%;
+        flex-direction: row;
+        padding: 0;
+        gap: 0;
+        min-height: 100vh;
+        width: 100%;
+    }
+
+    section.hero {
+        width: 50%;
+        min-height: 100vh;
+        flex-shrink: 0;
+        overflow: hidden;
+    }
+
+    section.hero img {
+        content: url(img/desktop--hero-img.png);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        margin-bottom: 0;
+    }
+
+    div.sign-in-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px; 
+    }
+
+    section.content-wrapper {
+        width: 50%;
+        padding: 60px 48px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 16px;
+        min-height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .content-wrapper .content h1 {
+        font-size: 36px;
+    }
+
+    .status-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+
+    .status-container .desktop-status {
+        background-color: transparent;
+        padding: 0;
+        gap: 8px;
+    }
+
+    .status-container .deskto-status:last-child {
+        grid-column: 1;
+    }
+
+            
+    .status-container .desktop-status{
+        display: flex;
+        align-items: center;
+        margin: 10px 0px;
+        padding: 6px 10px;
+        border-radius: 8px;
+    }
+
+    .status-container .mobile-status{
+        display: none;
+    }
+
+    .status-container .desktop-status .cutlery-icon{
+        width: 44px;
+        height: 44px;
+        margin-right: 10px;
+        border-radius: 13px;
+    }
+
+    .status-container .desktop-status .food-status{
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        text-transform: capitalize;
+
+    }
+
+    .cta-buttons {
+        gap: 16px;
+    }
+
+    .desktop-copyright {
+        display: block;
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        color: #6B7280;
+        padding-top: 24px;
+        text-align: center;
+        margin-top: 24px
+        
+    }
+
+    .desktop-copyright a {
+        color: #1E88E5;
+        text-decoration: none;
+        margin-left: 8px;
+    }
+
+    .site-footer {
+        display: block;
+        background-color: #61412C;
+        padding: 60px 80px 40px;
+        position: relative;
+        width: 100%;
+        
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        gap: 40px;
+        margin-bottom: 40px;
+    }
+
+    .footer-logo {
+        font-family: "Island Moments", cursive;
+        font-size: 37px;
+        font-weight: 400;
+        line-height: 37px;
+        color: #FF7A18;
+        margin-bottom: 2px;
+    }
+
+    .footer-brand p { 
+        color: #FFFFFF;
+        font-family: "Jost", sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 36px;
+        width: 50%;
+    }
+
+    .footer-links h3,
+    .footer-contact h3 {
+        font-family: "Jost", sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 36px;
+        color: #FFFFFF;
+        margin-bottom: 16px;
+    }
+
+    .footer-links ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-links ul li a {
+        color: #FFFFFF;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    .footer-contact p{
+        padding: 8px;
+    }
+
+    .footer-social {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-social a {
+        text-decoration: none;
+    }
+
+    .footer-links ul li a,
+    .footer-contact p,
+    .footer-social a{
+        font-family: "Poppins", sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        color: #FFFFFF;
+
+    }
+
+    .footer-copyright {
+        color: #FFFFFF;
+        font-family: "Poppins", sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        margin-bottom: 40px;
+    }
+
+    .scroll-top {
+        position: absolute;
+        bottom: 40px;
+        right: 40px;
+        background-color: #1E88E5;
+        border: none;
+        border-radius: 50%;
+        width: 48px;
+        height: 48px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px;
+    }
+
+    .scroll-top img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .sign-in-wrapper h3 {
+        display: block;
+        font-family: "Island Moments", cursive;
+        font-size: 32px;
+        font-weight: 400;
+        color: #FF7A18;
+    }
+
+    .sign-in-wrapper h3.brand {
+        display: block;
+        font-family: "Island Moments", cursive;
+        font-size: 40px;
+        font-weight: 400;
+        color: #FF7A18;
+    }
+
+    .content .brand-mobile {
+        display: none;
+    }
+
+}
+
