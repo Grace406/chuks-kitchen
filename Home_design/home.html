@@ -3,8 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <meta name="description" content="Order authentic Nigerian meals from Chuks Kitchen: jollof rice, soups and swallow, grills and BBQ, handcrafted with passion and delivered with care.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Chuks Kitchen | Authentic Nigerian Home Cooking, Delivered">
+    <meta property="og:description" content="Order authentic Nigerian meals from Chuks Kitchen: jollof rice, soups and swallow, grills and BBQ, handcrafted with passion and delivered with care.">
+    <meta property="og:url" content="https://home-chuks-kitchen.netlify.app/">
+
+    <title>Chuks Kitchen | Authentic Nigerian Home Cooking, Delivered</title>
     <link rel="stylesheet" href="home.css">
+    <link rel="canonical" href="https://home-chuks-kitchen.netlify.app/">
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +29,7 @@
         <header class="logo">
             <h2>chuks kitchen</h2>
             <nav>
-                <img src="assets/Menu-icon.svg" alt="menu" class="hamburger">
+                <img src="assets/Menu-icon.svg" alt="Open menu" class="hamburger">
                 <ul class="nav-links">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Explore</a></li>
@@ -37,7 +44,7 @@
         <section class="hero">
             <picture>
                 <source srcset="assets/img/hero-desktop.png" media="(min-width: 1024px)">
-                <img src="assets/img/hero-mobile.png" alt="hero image" class="hero-image">  
+                <img src="assets/img/hero-mobile.png" alt="Table spread with Nigerian dishes including jollof rice, grilled meat and soups" class="hero-image">  
             </picture>
             
             <div class="hero-content">
@@ -52,8 +59,8 @@
 
         <div class="search-wrapper">
             
-            <img class="search-icon" src="assets/search-icon.svg" alt="search icon">
-            <input type="search" name="search-box" class="search-box" placeholder="What are you craving for today?">
+            <img class="search-icon" src="assets/search-icon.svg" alt="">
+            <input type="search" name="search-box" class="search-box" placeholder="What are you craving for today?" aria-label="Search for a dish">
             
         </div>
         
@@ -63,17 +70,17 @@
             <div class="categories-list">
 
                 <div class="category-card">
-                    <img src="assets/img/jollof.png" alt="Jollof Delights">
+                    <img src="assets/img/jollof.png" alt="Jollof rice served with fried chicken">
                     <p>Jollof Delights</p>
                 </div>
 
                 <div class="category-card">
-                    <img src="assets/img/swallow.png" alt="Swallow & Soups">
+                    <img src="assets/img/swallow.png" alt="Swallow served with Nigerian soup">
                     <p>Swallow & Soups</p>
                 </div>
 
                 <div class="category-card">
-                    <img src="assets/img/grills.png" alt="Grills & BBQ">
+                    <img src="assets/img/grills.png" alt="Grilled skewers and BBQ">
                     <p>Grills & BBQ</p>
                 </div>
 
@@ -85,12 +92,12 @@
                 </div>
 
                 <div class="category-card desktop-only">
-                    <img src="assets/img/jollof.png" alt="Jollof Delights">
+                    <img src="assets/img/jollof.png" alt="Jollof rice served with fried chicken">
                     <p>Jollof Delights</p>
                 </div>
 
                 <div class="category-card desktop-only">
-                    <img src="assets/img/grills.png" alt="Jollof Delights">
+                    <img src="assets/img/grills.png" alt="Grilled skewers and BBQ">
                     <p>Grills & BBQ</p>
                 </div>
 
@@ -107,7 +114,7 @@
             <div class="specials-list">
 
                 <div class="specials-card">
-                    <img src="assets/img/jollof.png" alt="Jollof Delights">
+                    <img src="assets/img/jollof-&-fried-chicken.png" alt="Jollof rice served with fried chicken">
                     <h3>Jollof Rice & Fried Chicken</h3>
                     <p>Our signature Jollof rice, cooked to perfection, served with succulent fried chicken.</p>
                     <div class="order">
@@ -117,7 +124,7 @@
                 </div>
 
                 <div class="specials-card">
-                    <img src="assets/img/pepper-soup.png" alt="spicy tilapia pepper soup">
+                    <img src="assets/img/pepper-soup.png" alt="spicy tilapia pepper soup in a bowl">
                     <h3>Spicy Tilapia Pepper Soup</h3>
                     <p>A comforting and spicy soup with tender tilapia fish, a true Nigerian delicacy.</p>
                     <div class="order">
@@ -127,9 +134,9 @@
                 </div>
 
                 <div class="specials-card">
-                    <img src="assets/img/jollof.png" alt="Jollof Delights">
+                    <img src="assets/img/jollof-&-fried-chicken.png" alt="Jollof rice served with fried chicken">
                     <h3>Jollof Rice & Fried Chicken</h3>
-                    <p>Our signature Jollof rice, cooked to perfection, served with succulent friedchicken.</p>
+                    <p>Our signature Jollof rice, cooked to perfection, served with succulent fried chicken.</p>
                     <div class="order">
                         <span class="price">₦3,500</span>
                         <button class="add-to-cart-btn">Add to cart</button>
@@ -175,7 +182,7 @@
         </section>
 
         <section class="promotion">
-            <img src="assets/img/promotion-img.png" alt="beans and plantain image" >
+            <img src="assets/img/promotion-img.png" alt="beans and plantain meal" >
 
             <div class="promotion-content">
                 <h2 class="promotion-title">Introducing Our New Menu Additions!</h2>
@@ -219,7 +226,7 @@
                 </div>
             </div>
     
-            <p class="footer-copyright">© 2020 Lift Media. All rights reserved.</p>
+            <p class="footer-copyright">© 2026 Chuks Kitchen. All rights reserved.</p>
     
             <button class="scroll-top">
                 <img src="assets/arrow-up.svg" alt="scroll to top">
